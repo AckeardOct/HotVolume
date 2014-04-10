@@ -8,7 +8,7 @@ Widget::Widget(QSystemTrayIcon *parent)
     thread->start();
     setContextMenu(menu);
     setToolTip("HotVolume");
-    setIcon(QIcon("://resource/Icon.jpg"));
+    setIcon(QPixmap("://resource/Icon.png"));
 
     QAction * actQuit = new QAction("&Quit",this);
     connect(actQuit,SIGNAL(triggered()),qApp,SLOT(quit()));
