@@ -2,6 +2,7 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include <bass.h>
 
 class Widget : public QWidget
 {

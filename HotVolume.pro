@@ -16,3 +16,8 @@ SOURCES += main.cpp\
         widget.cpp
 
 HEADERS  += widget.h
+
+unix|win32: LIBS += -L$$PWD/BASS/ -lbass
+
+INCLUDEPATH += $$PWD/BASS
+DEPENDPATH += $$PWD/BASS
