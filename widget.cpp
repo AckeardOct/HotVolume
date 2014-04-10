@@ -11,9 +11,6 @@ Widget::Widget(QSystemTrayIcon *parent)
     QAction * actQuit = new QAction("&Quit",this);
     connect(actQuit,SIGNAL(triggered()),qApp,SLOT(quit()));
     menu->addAction(actQuit);
-
-    BASS_Init(-1,44100,BASS_DEVICE_DEFAULT,0,NULL);
-    //BASS_SetVolume(0.0);
 }
 
 Widget::~Widget()
