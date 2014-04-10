@@ -2,14 +2,20 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include <QSystemTrayIcon>
+#include <QMenu>
+#include <QAction>
+#include <QApplication>
 #include <bass.h>
 
-class Widget : public QWidget
+class Widget : public QSystemTrayIcon
 {
     Q_OBJECT
+private:
+    QMenu * menu;
 
 public:
-    Widget(QWidget *parent = 0);
+    Widget(QSystemTrayIcon *parent = 0);
     ~Widget();
 };
 

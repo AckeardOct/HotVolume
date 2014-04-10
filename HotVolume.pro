@@ -21,3 +21,6 @@ unix|win32: LIBS += -L$$PWD/BASS/ -lbass
 
 INCLUDEPATH += $$PWD/BASS
 DEPENDPATH += $$PWD/BASS
+
+RESOURCES += \
+    res.qrc
