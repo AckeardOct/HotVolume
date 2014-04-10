@@ -3,5 +3,6 @@ HotVolume
 
 HotKeys for volume control
 
-Alt + Z - volume = 0
-Alt + X - volume = 1
+Alt + Z - Mute
+Alt + A - volume Up
+Alt + S - volume Down

@@ -4,6 +4,8 @@ Widget::Widget(QSystemTrayIcon *parent)
     : QSystemTrayIcon(parent),
       menu(new QMenu)
 {
+    MyThread * thread = new MyThread;
+    thread->start();
     setContextMenu(menu);
     setToolTip("HotVolume");
     setIcon(QIcon("://resource/Icon.jpg"));
